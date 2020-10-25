@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormPendaftaranSiswa</title>
+</head>
+<body>
+    <div align="center"><img src="logos_STT-NF_single.jpg" width="150">
+        <h1>FORMULIR PENDAFTARAN MURID BARU</h1>
+        <h1>STT TERPADU NURUL FIKRI</h1>
+        <h1>Tahun Ajaran 2020/2024</h1>
+    </div>
+    <hr>
+    <div align="right">
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" name="tanggal" id="tanggal">
+    </div>
+    <br><br>
+    
+    <form action="">
+        <h2>PERSONAL INFORMATION</h2>
+    <fieldset>
+        <label for="nama"></label> Nama: <br>
+        <input type="text" name="nama" id="nama"><br>
+        <br>
+        <label for="JK">Jenis Kelamin:</label>
+        <div>
+            <input type="radio" name="JK" value="L">Laki-laki
+            <input type="radio" name="JK" value="P">Perempuan
+        </div>
+        <br>
+        <label for="start_date">Tanggal Lahir:</label><br>
+        <input type="date" name="start_date" id="start_date">
+        <br>
+    </fieldset>
+    <br><br>
+    <h2>CONTACT INFORMATION</h2>
+    <fieldset>
+        <label for="alamat">Alamat Lengkap</label>
+        <div>
+            <textarea name="alamat" cols="30" rows="4"></textarea>
+        </div>
+        <br>
+        <label for="klr">Kelurahan:</label>
+        <input type="text" name="klr" id="klr">
+        <label for="kcm">Kecamatan:</label>
+        <input type="text" name="kcm" id="kcm">
+        <label for="kota">Kota:</label>
+        <input type="text" name="kota" id="kota">
+        <br><br>
+        <label for="hp">Nomor Hp:</label>
+        <input type="text" name="hp" id="hp">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+        <br><br>
+        <div>
+            <label for="kelas">Kelas:</label>
+            <div>
+                <input type="radio" name="kelas" value="RP">Reguler Pagi
+                <input type="radio" name="kelas" value="KK">Kelas Karyawan
+            </div>
+        </div>
+    </fieldset>
+
+        <br><br>
+        <h2>INFORMASI KURSUS</h2>
+        <fieldset>
+            <label for="NK">Nama Kursus</label><br>
+            <input type="text" name="NK" id="NK">
+            <br><br>
+            <label for="bayar">Pembayaran</label><br>
+            <div>
+                <input type="radio" name="bayar" id="bayar">Beasiswa
+                <input type="radio" name="bayar" id="bayar">Cash
+                <input type="radio" name="bayar" id="bayar">Transfer 
+            </div>
+            <br><br>
+            <label for="komen">Komentar</label><br>
+            <div>
+                <textarea name="komen" id="komen" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <br><br>
+        <input type="submit" kirim>
+    </form>
+</body>
+</html>
